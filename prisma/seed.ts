@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 import { faker } from '@faker-js/faker';
 const prisma = new PrismaClient()
 async function main() {
-  //prisma.$connect();
+  prisma.$connect();
   for (let i = 0; i < 20; i++) {
     prisma.jatek.create({
       data: {

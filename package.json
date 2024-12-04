@@ -2,7 +2,7 @@
   "name": "nestjs-keret-2024",
   "version": "0.0.1",
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "description": "",
   "author": "",

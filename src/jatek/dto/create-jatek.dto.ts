@@ -11,6 +11,6 @@ export class CreateJatekDto {
   @IsIn(materials)
   anyag: string
 
-  @IsDecimal()
+  //@IsDecimal()
   suly: number
 }

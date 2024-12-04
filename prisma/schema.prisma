@@ -17,20 +17,18 @@ model Jatek {
   id Int @id @default(autoincrement())
   megnevezes String
   anyag String
-  suly Decimal
+  suly Decimal //@db.Decimal(8,2)
 
   Gyerek Gyerek[]
 
-  //JatekOnChild JatekOnChild[]
 }
 
 model Gyerek {
   id Int @id @default(autoincrement())
   nev String
   cim String
-  jovolte Boolean @default(true)
+  jovolte Boolean @default(true) 
   ajandekok Jatek[]
 
-  //JatekOnChild JatekOnChild[]
 }
 
